@@ -1,8 +1,5 @@
-
-import searching.BinarySearch;
-
-
-
+import java.util.Arrays;
+import recursion.ReverseArray;
 
 public class App {
     public static void main(String[] args) {
@@ -14,8 +11,9 @@ public class App {
         // BubbleSort.bubbleSort(arr);
         // InsertionSort.insertionSort(arr);
         // QuickSort.quickSort(arr, 0, arr.length-1);
-        // System.out.println(Arrays.toString(arr)); // Output for sorting algorithms
+        ReverseArray.reverseArray(arr, 0, arr.length-1);
+        System.out.println(Arrays.toString(arr)); // Output for sorting algorithms
 
-        System.out.println(BinarySearch.binarySearch(arr, 0, arr.length-1, 5));
+        // System.out.println(BinarySearch.binarySearch(arr, 0, arr.length-1, 5));
     }
 }
