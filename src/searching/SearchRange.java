@@ -9,7 +9,7 @@ public class SearchRange {
         int high = lastIndex;
 
         while (low <= high){
-            int mid = (low + high) / 2;
+            int mid = low + (high - low)/2;
 
             if (nums[mid] == target) {
                 if (mid == 0 || nums[mid - 1] != target) {

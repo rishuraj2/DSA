@@ -12,7 +12,7 @@ public class LowerBound {
                 return -1;
         }
     
-        int mid = (low + high) / 2;
+        int mid = low + (high - low)/2;
         
         if (target == arr[mid]) {
             if (mid == 0 || arr[mid-1] != target)
