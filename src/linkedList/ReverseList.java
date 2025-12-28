@@ -24,4 +24,3 @@ public class ReverseList {
         return head;
     }
 }
-}
