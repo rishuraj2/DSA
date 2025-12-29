@@ -12,8 +12,7 @@ public class InsertNode {
     }
 
     public static void insertAtEnd(ListNode head, int value) {
-        ListNode toInsert = new ListNode();
-        toInsert.val = value;
+        ListNode toInsert = new ListNode(value);
         toInsert.next = null;
 
         while (head.next != null) {
