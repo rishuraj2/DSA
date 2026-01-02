@@ -2,8 +2,7 @@ package linkedList;
 
 public class InsertNode {
     public static void insertAtStart(ListNode head, int value) {
-        ListNode toInsert = new ListNode();
-        toInsert.val = value;
+        ListNode toInsert = new ListNode(value);
         toInsert.next = head.next;
 
         head.next = null;
